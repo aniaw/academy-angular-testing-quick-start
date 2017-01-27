@@ -21,10 +21,10 @@
                     controller: 'ContactCtrl',
                     controllerAs: 'contactCtrl'
                 });
-                $routeProvider.when('/gravatars', {
-                    templateUrl: 'modules/gravatars/gravatars.tpl.html',
-                    controller: 'GravatarsCtrl',
-                    controllerAs: 'gravatarsCtrl'
+                $routeProvider.when('/accessories', {
+                    templateUrl: 'modules/accessories/accessories.tpl.html',
+                    controller: 'AccessoriesCtrl',
+                    controllerAs: 'accessoriesCtrl'
                 });
                 $routeProvider.when('/author', {
                     templateUrl: 'modules/author/author.tpl.html',

@@ -1,0 +1,12 @@
+<div>
+    <h2>Box</h2>
+    <h3>{{accessoriesCtrl.message}}</h3>
+    <box size="50px" color="color" open="accessoriesCtrl.showInside(size,name,color)"></box>
+
+    <h2>Large gravatars</h2>
+    <gravatar ng-repeat="user in accessoriesCtrl.users" user="user" size="lg"></gravatar>
+
+    <h2>Small gravatars</h2>
+    <gravatar2 ng-repeat="user in accessoriesCtrl.users" user="user" size="sm"></gravatar2>
+</div>
+
