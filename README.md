@@ -22,6 +22,24 @@ Run the Tests
 npm test
 ```
 
+Run the e2e tests
+-----------------
+1) Run app
+
+```
+npm start
+```
+
+2) Run webdriver manager
+```
+webdriver-manager start
+```
+
+3) Run e2e tests
+```
+npm run e2e
+```
+
 
 Bibliography
 ------------

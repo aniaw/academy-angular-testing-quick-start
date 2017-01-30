@@ -7,10 +7,10 @@
         <label>Phone</label>
         <input type="text" class="form-control" name="phone" ng-model="contactCtrl.newContact.phone"/>
         <input type="hidden" ng-model="contactCtrl.newContact.id"/>
-        <button class="btn btn-success" ng-click="contactCtrl.saveContact()"> Save</button>
+        <button id="saveButton" class="btn btn-success" ng-click="contactCtrl.saveContact()"> Save</button>
     </form>
-    <hr />
-    <table class="table table-bordered">
+    <hr/>
+    <table id="contactsTable" class="table table-bordered">
         <thead>
         <tr>
             <th>Name</th>
@@ -21,12 +21,12 @@
         </thead>
         <tbody>
         <tr ng-repeat="contact in contactCtrl.contacts">
-            <td>{{contact.name }}</td>
-            <td>{{contact.email }}</td>
-            <td>{{contact.phone }}</td>
-            <td>
-                <a ng-click="contactCtrl.editContact(contact.id)">edit</a> |
-                <a ng-click="contactCtrl.deleteContact(contact.id)">delete</a>
+            <td data-name="tName">{{contact.name }}</td>
+            <td data-name="tEmail">{{contact.email }}</td>
+            <td data-name="tPhone">{{contact.phone }}</td>
+            <td data-name="tAction">
+                <a id="editButton" ng-click="contactCtrl.editContact(contact.id)">edit</a> |
+                <a id="deleteButton" ng-click="contactCtrl.deleteContact(contact.id)">delete</a>
             </td>
         </tr>
         </tbody>
