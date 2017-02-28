@@ -10,10 +10,11 @@ module.exports = function (config)
         basePath: '../',
 
         // testing framework to use (jasmine/mocha/qunit/...)
-        frameworks: ['jasmine'],
+        frameworks: ['mocha', 'chai', 'chai-as-promised', 'sinon-chai'],
 
         // list of files / patterns to load in the browser
         files: [
+            'app/bower_components/lodash/lodash.js',
             'app/bower_components/angular/angular.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
             'app/bower_components/angular-route/angular-route.min.js',
@@ -53,7 +54,7 @@ module.exports = function (config)
         browsers: ['PhantomJS'],
 
         // Which plugins to enable
-        plugins: ['karma-phantomjs-launcher', 'karma-jasmine', 'karma-spec-reporter', 'karma-coverage'],
+        plugins: ['karma-phantomjs-launcher', 'karma-mocha', 'karma-chai', 'karma-chai-plugins', 'chai-as-promised', 'karma-spec-reporter', 'karma-coverage'],
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit

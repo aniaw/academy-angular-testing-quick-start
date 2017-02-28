@@ -5,14 +5,15 @@
         "_": true,
         "beforeEach":true,
         "aferEach":true,
-        "beforeAll":true,
-        "afterAll":true,
+        "before":true,
+        "after":true,
         "describe":true,
         "inject":true,
         "it":true,
         "module":true,
         "expect":true,
-        "spyOn":true
+        "sinon":true,
+        "chai" : true
     },
     "bitwise": true,
     "browser": true,

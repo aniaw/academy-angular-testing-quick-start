@@ -10,6 +10,7 @@
 
         this.save = function (contact)
         {
+            contact =_.cloneDeep(contact);
             if (contact.id === undefined) {
                 contact.id = uid++;
                 contacts.push(contact);
